@@ -1,13 +1,10 @@
 ---
 title: "Analysis"
 output:
-  html_document: default
-  github_document: default
+      html_document:
+        keep_md: true
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 
 Here is an overall intro.
