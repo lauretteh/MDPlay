@@ -1,8 +1,7 @@
 ---
-title: "Analysis"
+title: "Tab Test"
 output:
-      html_document:
-        keep_md: true
+      html_document
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -11,48 +10,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Here is an overall intro.
 
-## Class Wiki {.tabset}
+## Tabbed Wiki {.tabset}
 
-### Consensus Peaks
+### Subtopic 1
 
-Discuss consensus peaks here
+Discuss Subtopic 1 here
 
-### Global Clustering
+Insert an in-document link here
 
-Discuss global clustering here
+### Subtopic 2 
 
-count_based_clustering.Rmd (bam files)
+Discuss Subtopic 2 here
 
-peak_based_clustering.Rmd (consensus peak files)
+Insert a relative link here to another document
 
-### Peak Feature Intersect
+Insert a second link here
 
-Discuss peak feature intersect
+### Subtopic 3
 
-subset_peaks_by_feature_type.Rmd
-
-permutation_test_by_feature_type.Rmd
-
-### Correlation with Expression
-
-Discuss correlation with Expression here
-
-retrieve_expression.Rmd
-
-tf_binding_vs_expression.Rmd
-
-### Feature Clustering
-
-Discuss feature clustering here
-
-feature_based_clustering.Rmd
-
-clustering_per_feature_type.Rmd
-
-promoter_profile.Rmd
-
-
-### Repeat Analysis
-
-Discuss repeat analysis here
+Discuss Subtopic 3 here
 
