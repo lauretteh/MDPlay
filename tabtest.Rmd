@@ -7,10 +7,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+<!-- to create github markdown, change output to github_document -->
 
 Here is an overall intro.
 
-## Tabbed Wiki {.tabset}
+## Tabbed Knowledgebase {.tabset .tabset-fade .tabset-pills}
 
 ### Subtopic 1
 
