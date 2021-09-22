@@ -1,0 +1,26 @@
+---
+title: "linking"
+output: pdf_document
+---
+
+## A section
+
+blah blah
+
+\pagebreak
+
+## A second section with a custom identifier {#custom}
+
+blah blah
+
+\pagebreak
+
+## Links
+
+You can use imlicit references to to refer to sections
+you have not explicity named, like this:
+
+see [A section]
+
+You can use links to refer to sections with explicit
+references, like this [the secod section](#custom)
