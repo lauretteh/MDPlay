@@ -7,12 +7,15 @@ output: pdf_document
 
 blah blah
 
-\pagebreak
+link to [tabtest](tabtest.html#tabbed_knowledgebase)
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## A second section with a custom identifier {#custom}
 
 blah blah
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 \pagebreak
 
 ## Links
@@ -21,6 +24,8 @@ You can use imlicit references to to refer to sections
 you have not explicity named, like this:
 
 see [A section]
+
+[link](#a-section) is another way that uses shorthand title notation
 
 You can use links to refer to sections with explicit
 references, like this [the second section](#custom)

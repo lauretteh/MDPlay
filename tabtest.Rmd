@@ -12,22 +12,25 @@ knitr::opts_chunk$set(echo = TRUE)
 Here is an overall intro.
 
 ## Tabbed Knowledgebase {.tabset .tabset-fade .tabset-pills}
+***
 
 ### Subtopic 1
 
 Discuss Subtopic 1 here
 
-Insert an in-document link here
+Not this is a bug that won't be fixed:
+Link to tabbed subtopic 3 is [here](#Subtopic3)
 
-### Subtopic 2 
+
+### Subtopic 2
 
 Discuss Subtopic 2 here
 
-Insert a relative link here to another document
+Insert a relative link here to another document [here](linkingtest.html#custom)
 
-Insert a second link here
-
-### Subtopic 3
+### Subtopic3
 
 Discuss Subtopic 3 here
+
+
 

@@ -2,9 +2,16 @@
 -------------------------------
 Example of embedding an _Rmd file:
 
+***
+
 ```{r echo=FALSE, results='asis', comment=""}
+sessionInfo()
 now <- Sys.time()
-cat(paste0("<p>Website built on: ",now,"</p>\n"))
+cat(paste0("<p>Built on: ",now,"</p>\n"))
 ```
+
+***
+
+Notice the two cool way of adding horizontal lines
 
 ------------------------------
