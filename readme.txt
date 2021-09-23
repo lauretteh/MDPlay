@@ -2,6 +2,8 @@ This tests using the rmarkdown site generator method of building a website.
 
 reference:  
 https://bookdown.org/yihui/rmarkdown/rmardown-site.html
+https://bookdown.org/yihui/rmarkdown-cookbook/html-output.html
+https://bookdown.org/yihui/rmarkdown/interactive-documents.html#intro-widgets
 
 Required files:
 
