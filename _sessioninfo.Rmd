@@ -1,0 +1,10 @@
+
+-------------------------------
+Example of embedding an _Rmd file:
+
+```{r echo=FALSE, results='asis', comment=""}
+now <- Sys.time()
+cat(paste0("<p>Website built on: ",now,"</p>\n"))
+```
+
+------------------------------

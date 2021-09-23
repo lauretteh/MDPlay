@@ -1,0 +1,24 @@
+name: "MDSiteGenerator-Test-Website"
+
+navbar:
+  title: "RMD Site Generator Test Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Footer"
+      href: footer.html
+    - text: "Tab Test"
+      href: tabtest.html
+    - text: "Linking Test"
+      href: linkingtest.html
+output:
+  html_document:
+    theme: cosmo
+    highlight:  textmate
+    include:
+      after_body: footie.html
+    exclude:
+      -footer.html
+    css:  style.css

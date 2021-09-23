@@ -1,0 +1,9 @@
+---
+title: "Footer as an R Chunk"
+output: html_document
+---
+
+```{r echo=FALSE, results='asis', comment=""}
+now <- format(Sys.time(), format="%A, %b %d, %Y")
+cat(paste0("<p>Website built on: ",now,"</p>\n"))
+```

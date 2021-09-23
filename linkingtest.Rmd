@@ -23,4 +23,4 @@ you have not explicity named, like this:
 see [A section]
 
 You can use links to refer to sections with explicit
-references, like this [the secod section](#custom)
+references, like this [the second section](#custom)

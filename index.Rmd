@@ -1,0 +1,11 @@
+---
+title: "RMD Site Generator Test Website"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+Hello, World
+
+```{r, child="_sessioninfo.Rmd"}
+```
