@@ -1,0 +1,3 @@
+focus1,focus2,how_to,text
+basic,stats,random sample,sample(c('N','S','E','W'),20,replace=TRUE,prob=c(.25,.10,.15,.50))
+basic,stats,make a cross-tab table,table(rnrom(20))

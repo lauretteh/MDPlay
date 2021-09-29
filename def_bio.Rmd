@@ -1,0 +1,64 @@
+---
+title: "Def test"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+A very incomplete list of BioChem terms I have been learning is listed below.
+
+## Informal Vocabulary
+
+```{r echo=FALSE, results='asis', comment="", warning=FALSE, message=FALSE}
+library(tidyverse)
+library(htmlTable)
+library(magrittr)
+library(knitr)
+def_bio <- read.table("def_bio.csv",header=TRUE,sep=",")
+defs <- def_bio %>% 
+  select(-refs) %>%
+  arrange(.,term) %>%
+  mutate(term=str_c('### ',term,' {#',term,'} -')) %>%
+  unite(def,c(term,shortdef,longdef),sep="") %>%
+  #htmlTable(,rnames=FALSE)
+  kable(format="latex")
+test <- def_bio %>% 
+  select(-refs) %>%
+  arrange(.,term) %>%
+  mutate(term=str_c('### ',term,' {#',term,'} -')) %>%
+  unite(def,c(term,shortdef,longdef),sep="") %>%
+  mutate(def=str_c(def,'\n'))
+#cat(paste0("<p>",defs,"</p>\n"))
+def_bio %>% 
+  #select(-refs) %>%
+  arrange(.,term) %>%
+  mutate(term=str_c('<h3>',term,'</h3> - ')) %>%
+  mutate(shortdef=str_c(shortdef,'.  ')) %>%
+  mutate(longdef=str_to_sentence(longdef)) %>% 
+  mutate(refs=str_c('<br>',refs)) %>% 
+  unite(def,c(term,shortdef,longdef,refs),sep="") %>% 
+  #kable(,format="latex",header=c(""))
+  #htmlTable(,rnames=FALSE)
+  addHtmlTableStyle(align="l", 
+                      css.cell = "padding-left: .5em; padding-right: .2em;") %>% 
+  htmlTable(header=c(""),rnames=FALSE)
+
+```
+
+## References
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment="", results='asis'}
+refs <- def_bio %>%
+  select(refs) %>%
+  filter(!(refs %in% ""))
+
+if( nrow(refs) > 0)
+  #{ cat(paste0("<p>",refs,"</p>\n")) }
+  refs %>% 
+    addHtmlTableStyle(align="l", 
+                      css.cell = "padding-left: .5em; padding-right: .2em;") %>% 
+    htmlTable(header=c(""),rnames=FALSE)
+
+```
+

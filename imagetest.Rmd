@@ -1,0 +1,9 @@
+---
+title: "image test"
+output: html_document
+---
+
+## Attempting to pull in an image from scratch
+
+
+![did it work?](/scratch/Shares/rinn/rinnGrpCopy/group/Lab_webpage/Random.jpg)
