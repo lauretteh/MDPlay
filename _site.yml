@@ -5,14 +5,24 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "Footer"
-      href: footer.html
-    - text: "Tab Test"
-      href: tabtest.html
-    - text: "Linking Test"
-      href: linkingtest.html
+    - text: "Test Pages"
+      menu:
+        - text: "Footer Test"
+          href: footer.html
+        - text: "Tab Test"
+          href: tabtest.html
+        - text: "Linking Test"
+          href: linkingtest.html
+        - text: "Image Test"
+          href: imagetest.html
+    - text: "Knowlege Base"
+      menu:
+        - text: "R "
+          href: def_bio.html
+    - text: "Defs"
+      menu:
+        - text: "Bio Defs"
+          href: def_bio.html
 output:
   html_document:
     theme: cosmo

@@ -1,6 +1,6 @@
 ---
-title: "linking"
-output: pdf_document
+title: "linking test"
+output: html_document
 ---
 
 ## A section
@@ -9,12 +9,20 @@ blah blah
 
 link to [tabtest](tabtest.html#tabbed_knowledgebase)
 
+I alwayd wonder what [DNA](def_bio.html#DNA) is.
+
+This does not work:
+
+link to something that is [just text](#not_a_header), not a header
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## A second section with a custom identifier {#custom}
 
-blah blah
+This does not work
+
+blah blah{#not_a_header}
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 \pagebreak
 
